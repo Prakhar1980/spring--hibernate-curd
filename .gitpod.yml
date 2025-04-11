@@ -1,0 +1,5 @@
+image: maven:3.8.6-openjdk-17
+
+tasks:
+  - init: mvn clean install
+    command: mvn exec:java -Dexec.mainClass="com.vivek.app.AppRunner"
